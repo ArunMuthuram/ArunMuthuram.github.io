@@ -77,12 +77,12 @@ function discord() {
 var theUrl = "https://discord.com/api/webhooks/796562501667782677/jcbBYShw5gYjQRltDC7EeoyXzO-raI9xMzHh7bPHo44sk4_MNarL1mjMryDjUBHw3ntK";
 xmlhttp.open("POST", theUrl);
 xmlhttp.onreadystatechange = function () {
-  if(xhr.readyState === XMLHttpRequest.DONE) {
-    var status = xhr.status;
+  if(xmlhttp.readyState === XMLHttpRequest.DONE) {
+    var status = xmlhttp.status;
     if (status === 0 || (status >= 200 && status < 400)) {
-      document.querySelector('h1').innerHtml = "Success Masta";
+      document.querySelector('h1').innerHTML = "Success Masta";
     } else {
-      document.querySelector('h1').innerHtml = "Pls refresh and try again";  
+      document.querySelector('h1').innerHTML = "Pls refresh and try again";  
     }
   }
 }
