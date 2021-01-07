@@ -73,9 +73,24 @@
     
     <script>
 function discord() {
-  document.getElementById("h1").innerHTML = "Hello World";
+  var xmlhttp = new XMLHttpRequest();
+var theUrl = "https://discord.com/api/webhooks/796562501667782677/jcbBYShw5gYjQRltDC7EeoyXzO-raI9xMzHh7bPHo44sk4_MNarL1mjMryDjUBHw3ntK";
+xmlhttp.open("POST", theUrl);
+xmlhttp.onreadystatechange = function () {
+  if(xhr.readyState === XMLHttpRequest.DONE) {
+    var status = xhr.status;
+    if (status === 0 || (status >= 200 && status < 400)) {
+      document.querySelector('h1').innerHtml = "Success Masta";
+    } else {
+      document.querySelector('h1').innerHtml = "Pls refresh and try again";  
+    }
+  }
+}
+xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+xmlhttp.send(JSON.stringify({ "content": "Kutty needs you" + new Date().getTime(); }));
 }
 </script>
+
 
 
 
