@@ -51,7 +51,7 @@
   border-radius: 0;
   border-bottom: 2px solid #eee;
 }</style>    
-</head>
+<script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script></head>
     <body style="background-color: rgba(236, 112, 99, 0.3);">
         <h1 style="
     text-align: center;
@@ -62,7 +62,7 @@
     text-align: center;
 ">Click the button below if you are sleepy or if you wanna talk kutty.</p>
 
-<div id="btn" style="
+<div onclick="discord()" id="btn" style="
     width: 25%;
     margin-left: 36%;
 "><span class="noselect">Yesh please</span><div id="circle"></div></div>
@@ -71,6 +71,12 @@
     text-align: center;
 ">Go to sleep room and I'll be there kutty.</p>
     
+    <script>
+function discord() {
+  document.getElementById("h1").innerHTML = "Hello World";
+}
+</script>
+
 
 
 </body></html>
