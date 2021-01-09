@@ -51,8 +51,25 @@
   border-radius: 0;
   border-bottom: 2px solid #eee;
 }</style>    
-<script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script></head>
-    <body style="background-color: rgba(236, 112, 99, 0.3);">
+<script>function quote(){
+    let quotesArr = [`Why u so cute?`,`You make me go grrrrr..`,`Are u even real?`,`How many fell for u today?`,`Make me ur little toe.. Huhu`,`Why u torturing me?`, `Im playing ur videos in my mind now.`,`Watching you smile is my favourite activity now.`,`Just the thought of you makes me smile and i'm smiling 24x7.`,`Please call a lepidopterist because you are giving me new species of butterflies in my tummy everyday.`,`Your cute face and your cute smile are the reasons why I wake up smiling everyday.`,`I’ll give you massages everyday and i’m very gooood at them.` 
+,`I wanna boop boop ur button nose.`,`I am 27 years old. Please don’t make me blush like I am 15.`
+,`Your jawline is so sharp that it cuts right through my heart.`
+,`I found out that I have great stamina… Thanks to you.. Huhu`
+,`You: Damnnn.. My face is very cute. I don’t need anything else.
+Cleft chin: Hello there.. My name is cleft chin..How you doin..`
+,`All the dolls are jealous of your porcelain skin.`
+,`The story of how kutty was created.
+God : I am so drunk today.. Ooops.. I poured a lot of beauty potion
+          and intelligence and kindness and humour and hotness…`
+,`The past 4 months felt like 4 days.. I didn’t know you were a time bender.`        
+,`Everytime I stare into those angel eyes of yours, I smile for no reason.`
+,`I just found out there is a name for people like you.. It’s polyhistor`
+]
+document.querySelector('p').innerHTML = quotesArr[quotesArr.length * Math.random() | 0];
+
+}</script></head>
+    <body style="background-color: rgba(236, 112, 99, 0.3);" onload="quote()">
         <h1 style="
     text-align: center;
     font-size: 100px;
@@ -72,6 +89,7 @@
 ">Go to sleep room and I'll be there kutty.</p>
     
     <script>
+
 function discord() {
   var xmlhttp = new XMLHttpRequest();
 var theUrl = "https://discord.com/api/webhooks/796562501667782677/jcbBYShw5gYjQRltDC7EeoyXzO-raI9xMzHh7bPHo44sk4_MNarL1mjMryDjUBHw3ntK";
